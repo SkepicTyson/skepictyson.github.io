@@ -1,0 +1,137 @@
+<script>
+if (screen.width < 768) {
+  window.location = "index-mobile.html";
+}
+else {
+  window.location = "index-desktop.html";
+}
+</script>
+<!DOCTYPE html> 
+<html lang="fa" dir="rtl"> 
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SKEPTIC TYSON</title> 
+  <link href="https://fonts.googleapis.com/css2?family=IRANSans&display=swap" rel="stylesheet">
+  <style> 
+    body { 
+      margin: 0; 
+      padding: 0;
+      width: 100%;
+      background: url('https://live.staticflickr.com/65535/52796191390_13f591c513_z.jpg') no-repeat center center fixed; 
+      background-size: cover; 
+      font-family: "IRANSans", Arial, sans-serif;
+      color: #fff; 
+      overflow-x: hidden;
+    } 
+    /* Media query for mobile devices */
+    @media (max-width: 680px) {
+      body {
+        background-image: url('https://live.staticflickr.com/65535/52796191390_13f591c513_z.jpg');
+      }
+      .description {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        padding: 1rem;
+      }
+      .social-links {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+        margin: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+      }
+    }
+
+    /* Media query for desktop devices */
+    @media (min-width: 681px) {
+      .description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+        width: 40%;
+        margin: auto;
+        float: left;
+      }
+    }
+
+    .social-links {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2rem;
+      margin: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      box-sizing: border-box;
+    }
+
+    .social-links a {
+      color: #fff;
+      text-decoration: none;
+      border: 2px solid #fff;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    .social-links a:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .heading {
+      margin: 0;
+      font-size: 2rem;
+      line-height: 3rem;
+      text-align: left;
+      padding: 2rem;
+      animation-name: slideInFromLeft;
+      animation-duration: 1s;
+    }
+
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body> 
+  <div class="heading">
+    <h1>SKEPTIC TYSON</h1>
+  </div>
+  <div class="description">
+    <p>اسکپتیک، کاراکتر مشهور فارسی زبان در پلتفرم کلابهاوس که موضوعات عمیق سنگین</p> 
+    <p>و حوصله سر بر را با تکنیکی بدیع و با شوخی ها و حرفهای رکیک و بازیگوشی بیان میکند.</p>
+    <p>کارگاه آموزشی بدیع، برای مخاطب جوان ایرانی و برای موضوعات چالشی و ساختار شکن.</p>
+  </div>
+ 
+ <div class="social-links"> 
+   <a href="https://telegram.im/skeptictyson" target="_blank">تلگرام</a> 
+   <a href="https://www.youtube.com/Skeptictyson" target="_blank">یوتیوب</a> 
+   <a href="https://www.instagram.com/skeptictyson" target="_blank">اینستاگرام</a> 
+        <a href="https://www.twitch.tv/skeptictyson" target="_blank">توییچ</a>
+        <a href="https://www.facebook.com/skeptictyson/" target="_blank">فیسبوک</a>
+    </div>
+</body>
+</html>
